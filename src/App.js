@@ -6,7 +6,7 @@ import { Header } from './components/UI/Header/Header';
 import News from './components/UI/News/News';
 
 const fetchData = async() =>{
-  const data = await axios.get("https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=0768291cf49b62749cf771dd344ba952");
+  const data = await axios.get("https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=");
   return data;
 }
 
