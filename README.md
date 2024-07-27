@@ -3,3 +3,6 @@
 
 ## site link
 [live site](https://barsaranjeet.github.io/)
+
+## admin template
+[template](https://coreui.io/product/free-react-admin-template/#live-preview)
