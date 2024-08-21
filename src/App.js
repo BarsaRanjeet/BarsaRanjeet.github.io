@@ -9,6 +9,7 @@ const MainLayout = React.lazy(() => import('./user/layout/MainLayout'))
 const Login = React.lazy(() => import('./user/views/pages/login/Login'))
 const Register = React.lazy(() => import('./user/views/pages/register/Register'))
 const Page404 = React.lazy(() => import('./user/views/pages/page404/Page404'))
+const DefaultLayout = React.lazy(()=>import('./admin/layout/DefaultLayout'))
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path="/register" name="Register" element={<Register />} />
         
           {/* admin routes */}
+          <Route exact path='/admin' name="Admin" element={<DefaultLayout />} />
 
           {/* no found */}
           <Route exact path="*" name="Register" element={<Page404 />} />
