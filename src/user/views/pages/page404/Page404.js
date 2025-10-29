@@ -17,7 +17,7 @@ const Page404 = () => {
             </div>
             <InputGroup className="input-prepend">
               <InputGroupText>
-              <i class="bi bi-search"></i>
+              <i className="bi bi-search"></i>
               </InputGroupText>
               <Form.Control type="text" placeholder="What are you looking for?" />
               <Button color="info">Search</Button>

@@ -20,19 +20,19 @@ const Register = () => {
                     <p className="text-body-secondary">Create your account</p>
                     <InputGroup className="mb-3">
                       <InputGroupText>
-                        <i class="bi bi-person"></i>
+                        <i className="bi bi-person"></i>
                       </InputGroupText>
                       <Form.Control placeholder="Username" autoComplete="username" />
                     </InputGroup>
                     <InputGroup className="mb-3">
                       <InputGroupText>
-                        <i class="bi bi-envelope-at"></i>
+                        <i className="bi bi-envelope-at"></i>
                       </InputGroupText>
                       <Form.Control placeholder="Email" autoComplete="email" />
                     </InputGroup>
                     <InputGroup className="mb-3">
                       <InputGroupText>
-                        <i class="bi bi-key-fill"></i>
+                        <i className="bi bi-key-fill"></i>
                       </InputGroupText>
                       <Form.Control
                         type="password"
@@ -42,7 +42,7 @@ const Register = () => {
                     </InputGroup>
                     <InputGroup className="mb-4">
                       <InputGroupText>
-                        <i class="bi bi-key-fill"></i>
+                        <i className="bi bi-key-fill"></i>
                       </InputGroupText>
                       <Form.Control
                         type="password"

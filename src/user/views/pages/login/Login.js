@@ -22,13 +22,13 @@ const Login = () => {
                       <p className="text-body-secondary">Sign In to your account</p>
                       <InputGroup className="mb-3">
                         <InputGroupText>
-                          <i class="bi bi-person"></i>
+                          <i className="bi bi-person"></i>
                         </InputGroupText>
                         <Form.Control placeholder="Username" autoComplete="username" />
                       </InputGroup>
                       <InputGroup className="mb-4">
                         <InputGroupText>
-                          <i class="bi bi-key-fill"></i>
+                          <i className="bi bi-key-fill"></i>
                         </InputGroupText>
                         <Form.Control
                           type="password"
@@ -61,7 +61,7 @@ const Login = () => {
                         Thank you!
                       </p>
                       <Link to="/register">
-                        <Button color="primary" className="mt-3" active tabIndex={-1}>
+                        <Button type="button" color="primary" className="mt-3" active tabIndex={-1}>
                           Register Now!
                         </Button>
                       </Link>
