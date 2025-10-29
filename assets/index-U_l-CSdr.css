@@ -1,4 +1,4 @@
-.loading{height:100vh;width:100vw;align-items:center;justify-content:center;display:flex}body{background-image:url(./wallpaper-BITDDUx6.png);background-size:cover;background-repeat:no-repeat;background-position:50%;margin:0 auto;width:100vw;height:100vh}/*!
+.loading{height:100vh;width:100vw;align-items:center;justify-content:center;display:flex;background-color:#0000001a;position:fixed;top:0;left:0;z-index:9999}.loading .spinner-border{width:2rem;height:2rem}body{background-image:url(./wallpaper-BITDDUx6.png);background-size:cover;background-repeat:no-repeat;background-position:50%;margin:0 auto;width:100vw;height:100vh}/*!
 * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
 * Copyright 2019-2024 The Bootstrap Authors
 * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
