@@ -3,9 +3,3 @@
 
 ## site link
 [live site](https://barsaranjeet.github.io/)
-
-## Backend deployed 
-- Render
-
-## Database
-- Mongodb
