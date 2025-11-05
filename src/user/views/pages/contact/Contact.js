@@ -54,7 +54,7 @@ const Contact = () => {
           <div className="container">
             <h1 className="contact-hero-title">Get in Touch</h1>
             <p className="contact-hero-subtitle">
-              Have a project in mind or want to collaborate? I'd love to hear from you!
+              Have a project in mind or want to collaborate? I`d love to hear from you!
             </p>
           </div>
         </section>
@@ -192,7 +192,7 @@ const Contact = () => {
               <div className="contact-form-side">
                 <h2 className="contact-form-title">Send a Message</h2>
                 <p className="contact-form-description">
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Fill out the form below and I`ll get back to you as soon as possible.
                 </p>
 
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -254,7 +254,7 @@ const Contact = () => {
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                         <polyline points="22 4 12 14.01 9 11.01" />
                       </svg>
-                      Thank you! Your message has been sent successfully. I'll get back to you soon.
+                      Thank you! Your message has been sent successfully. I`ll get back to you soon.
                     </div>
                   )}
 

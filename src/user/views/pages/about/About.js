@@ -137,7 +137,7 @@ const About = () => {
                 </div>
                 <ul className="project-details">
                   <li><strong>LINSI:</strong> Developed microservice APIs for newsroom platform used by 500+ global journalists</li>
-                  <li><strong>GFX:</strong> Built serverless APIs for real-time visual graphics for Reuters' live coverage</li>
+                  <li><strong>GFX:</strong> Built serverless APIs for real-time visual graphics for Reuters` live coverage</li>
                   <li><strong>LEON:</strong> Migrated legacy desktop app to cloud-based version serving 1K+ daily users</li>
                   <li>Optimized AWS Lambda and RDS queries, improving API performance by ~30%</li>
                 </ul>
@@ -285,7 +285,7 @@ const About = () => {
         {/* Contact CTA Section */}
         <section className="contact-cta-section">
           <div className="container">
-            <h2 className="section-title">Let's Connect</h2>
+            <h2 className="section-title">Let`s Connect</h2>
             <p className="cta-description">
               Interested in working together or have a project in mind? Feel free to reach out!
             </p>

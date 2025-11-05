@@ -22,7 +22,7 @@ const MainLayout = () => {
                 <a href="#features" className="btn btn-primary btn-large">
                   View Expertise
                 </a>
-                <a href="/contact" className="btn btn-outline btn-large">
+                <a href="#contact" className="btn btn-outline btn-large">
                   Contact Me
                 </a>
               </div>
