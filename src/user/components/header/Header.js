@@ -45,20 +45,20 @@ const Header = () => {
           >
             Features
           </a>
-          <a
+          <Link
             className="nav-link"
-            href="#about"
+            to="/about"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About Me
-          </a>
-          <a
+          </Link>
+          <Link
             className="nav-link"
-            href="#contact"
+            to="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact Me
-          </a>
+          </Link>
           <Link
             className="nav-link nav-link-login"
             to="/login"

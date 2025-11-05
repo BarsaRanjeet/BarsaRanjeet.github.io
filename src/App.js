@@ -5,6 +5,8 @@ import "@assets/scss/main";
 
 // Containers
 const MainLayout = React.lazy(() => import("./user/layout/MainLayout"));
+const About = React.lazy(() => import("./user/views/pages/about/About"));
+const Contact = React.lazy(() => import("./user/views/pages/contact/Contact"));
 const Login = React.lazy(() => import("./user/views/pages/login/Login"));
 const Register = React.lazy(
   () => import("./user/views/pages/register/Register")
@@ -25,6 +27,8 @@ const App = () => {
         <Routes>
           {/* normal routes */}
           <Route exact path="/" name="Home" element={<MainLayout />} />
+          <Route exact path="/about" name="About" element={<About />} />
+          <Route exact path="/contact" name="Contact" element={<Contact />} />
           <Route exact path="/login" name="Login" element={<Login />} />
           <Route
             exact
