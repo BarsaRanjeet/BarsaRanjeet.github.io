@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Header from '../../../components/header/Header'
 import '@assets/scss/pages/_page404.scss'
 
 const Page404 = () => {
   return (
     <div className="page404">
+      <Header />
       <div className="page404-container">
         <div className="page404-content">
           <h1 className="page404-title">404</h1>
@@ -13,7 +16,9 @@ const Page404 = () => {
         <div className="page404-search">
           <label className="visually-hidden" htmlFor="page404-query">Search</label>
           <input id="page404-query" type="text" placeholder="What are you looking for?" />
-          <button type="button" className="btn btn-info">Search</button>
+          <Link to="/" className="btn btn-info">
+            Go Home
+          </Link>
         </div>
       </div>
     </div>
