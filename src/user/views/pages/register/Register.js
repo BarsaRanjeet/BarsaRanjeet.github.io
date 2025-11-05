@@ -1,64 +1,46 @@
 import React from 'react'
-import { Button, Card, CardBody, Col, Container, Form, InputGroup, Row } from 'react-bootstrap'
-import InputGroupText from 'react-bootstrap/esm/InputGroupText'
 import Header from '../../../components/header/Header'
+import '@assets/scss/pages/_register.scss'
 
 const Register = () => {
   return (
-    <div className='min-vh-100 d-flex flex-column'>
+    <div className='register-page'>
       <div>
         <Header/>
       </div>
-      <div className="d-flex flex-row align-items-center justify-content-center flex-grow-1">
-        <Container>
-          <Row className="justify-content-center">
-            <Col md={9} lg={7} xl={6}>
-              <Card className="mx-4">
-                <CardBody className="p-4">
-                  <Form>
-                    <h1>Register</h1>
-                    <p className="text-body-secondary">Create your account</p>
-                    <InputGroup className="mb-3">
-                      <InputGroupText>
-                        <i className="bi bi-person"></i>
-                      </InputGroupText>
-                      <Form.Control placeholder="Username" autoComplete="username" />
-                    </InputGroup>
-                    <InputGroup className="mb-3">
-                      <InputGroupText>
-                        <i className="bi bi-envelope-at"></i>
-                      </InputGroupText>
-                      <Form.Control placeholder="Email" autoComplete="email" />
-                    </InputGroup>
-                    <InputGroup className="mb-3">
-                      <InputGroupText>
-                        <i className="bi bi-key-fill"></i>
-                      </InputGroupText>
-                      <Form.Control
-                        type="password"
-                        placeholder="Password"
-                        autoComplete="new-password"
-                      />
-                    </InputGroup>
-                    <InputGroup className="mb-4">
-                      <InputGroupText>
-                        <i className="bi bi-key-fill"></i>
-                      </InputGroupText>
-                      <Form.Control
-                        type="password"
-                        placeholder="Repeat password"
-                        autoComplete="new-password"
-                      />
-                    </InputGroup>
-                    <div className="d-grid">
-                      <Button color="success">Create Account</Button>
-                    </div>
-                  </Form>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
+      <div className='register-wrapper'>
+        <div className='register-card'>
+          <div className='register-card-body'>
+            <form className='register-form'>
+              <h1 className='register-title'>Register</h1>
+              <p className='register-subtitle'>Create your account</p>
+
+              <div className='form-group'>
+                <label className='visually-hidden' htmlFor='reg-username'>Username</label>
+                <input id='reg-username' name='username' placeholder='Username' autoComplete='username' />
+              </div>
+
+              <div className='form-group'>
+                <label className='visually-hidden' htmlFor='reg-email'>Email</label>
+                <input id='reg-email' name='email' type='email' placeholder='Email' autoComplete='email' />
+              </div>
+
+              <div className='form-group'>
+                <label className='visually-hidden' htmlFor='reg-password'>Password</label>
+                <input id='reg-password' name='password' type='password' placeholder='Password' autoComplete='new-password' />
+              </div>
+
+              <div className='form-group'>
+                <label className='visually-hidden' htmlFor='reg-password2'>Repeat password</label>
+                <input id='reg-password2' name='password2' type='password' placeholder='Repeat password' autoComplete='new-password' />
+              </div>
+
+              <div className='form-actions'>
+                <button type='button' className='btn btn-success'>Create Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   )

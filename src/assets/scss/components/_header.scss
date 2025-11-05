@@ -1,0 +1,51 @@
+/* SCSS Variables for easy theme management */
+$navbar-bg: #212529;
+$navbar-padding: 0.5rem 1rem;
+$link-color: rgba(255, 255, 255, 0.65);
+$link-hover-color: rgba(255, 255, 255, 0.85);
+$link-padding: 0.5rem 1rem;
+
+/* Main navbar container */
+.navbar {
+  background-color: $navbar-bg;
+  padding: $navbar-padding;
+  color: white;
+
+  .navbar-container {
+    width: 100%;
+    max-width: 1200px; /* Or use 100% for fluid width */
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    // The <img> tag inside will determine the size
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    .nav-link {
+      color: $link-color;
+      text-decoration: none;
+      padding: $link-padding;
+      display: block;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}

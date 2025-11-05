@@ -1,11 +1,9 @@
-import { Spinner } from 'react-bootstrap'
-import './Spinner.css'
+import '@assets/scss/components/_spinner.scss'
 
 const SpinnerAnimation = () => {
     return <div className='loading'>
-        <Spinner animation='border' variant='light' content='center'/>
+        <span className='spinner' aria-label='loading' />
     </div>
-    
 }
 
 export default SpinnerAnimation

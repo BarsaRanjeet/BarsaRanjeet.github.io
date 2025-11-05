@@ -1,30 +1,21 @@
 import React from 'react'
-import { Button, Col, Container, Form, InputGroup, Row } from 'react-bootstrap'
-import InputGroupText from 'react-bootstrap/esm/InputGroupText'
+import '@assets/scss/pages/_page404.scss'
 
 const Page404 = () => {
   return (
-    <div className="min-vh-100 d-flex flex-row align-items-center">
-      <Container>
-        <Row className="justify-content-center">
-          <Col md={8}>
-            <div className="clearfix" style={{color: 'white'}}>
-              <h1 className="float-start display-3 me-4">404</h1>
-              <h4 className="pt-3">Oops! You{"'"}re lost.</h4>
-              <p className="float-start">
-                The page you are looking for was not found.
-              </p>
-            </div>
-            <InputGroup className="input-prepend">
-              <InputGroupText>
-              <i className="bi bi-search"></i>
-              </InputGroupText>
-              <Form.Control type="text" placeholder="What are you looking for?" />
-              <Button color="info">Search</Button>
-            </InputGroup>
-          </Col>
-        </Row>
-      </Container>
+    <div className="page404">
+      <div className="page404-container">
+        <div className="page404-content">
+          <h1 className="page404-title">404</h1>
+          <h4 className="page404-subtitle">Oops! You are lost.</h4>
+          <p className="page404-text">The page you are looking for was not found.</p>
+        </div>
+        <div className="page404-search">
+          <label className="visually-hidden" htmlFor="page404-query">Search</label>
+          <input id="page404-query" type="text" placeholder="What are you looking for?" />
+          <button type="button" className="btn btn-info">Search</button>
+        </div>
+      </div>
     </div>
   )
 }
