@@ -1,1 +1,0 @@
-import{j as r}from"./index-DHNw25H_.js";import{H as t}from"./Header-D3N-0Vt8.js";import{C as o}from"./Container-BwwlUhd3.js";const i=()=>r.jsxs("div",{children:[r.jsx(t,{}),r.jsx(o,{fluid:!0})]});export{i as default};
