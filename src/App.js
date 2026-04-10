@@ -8,6 +8,8 @@ const MainLayout = React.lazy(() => import("./user/layout/MainLayout"));
 const About = React.lazy(() => import("./user/views/pages/about/About"));
 const Contact = React.lazy(() => import("./user/views/pages/contact/Contact"));
 const Login = React.lazy(() => import("./user/views/pages/login/Login"));
+const Tools = React.lazy(() => import("./user/views/pages/tools/Tools"));
+const Json = React.lazy(() => import("./user/views/pages/json/Json"));
 const Register = React.lazy(
   () => import("./user/views/pages/register/Register")
 );
@@ -30,6 +32,8 @@ const App = () => {
           <Route exact path="/about" name="About" element={<About />} />
           <Route exact path="/contact" name="Contact" element={<Contact />} />
           <Route exact path="/login" name="Login" element={<Login />} />
+          <Route exact path="/tools" name="Tools" element={<Tools />} />
+          <Route exact path="/tools/json" name="JSON" element={<Json />} />
           <Route
             exact
             path="/register"

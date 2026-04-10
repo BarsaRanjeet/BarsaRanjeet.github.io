@@ -38,13 +38,13 @@ const Header = () => {
           >
             Home
           </Link>
-          <a
+          {/* <a
             className="nav-link"
             href="#features"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Features
-          </a>
+          </a> */}
           <Link
             className="nav-link"
             to="/about"
@@ -58,6 +58,13 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact Me
+          </Link>
+          <Link
+            className="nav-link"
+            to="/tools"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Tools
           </Link>
           <Link
             className="nav-link nav-link-login"
