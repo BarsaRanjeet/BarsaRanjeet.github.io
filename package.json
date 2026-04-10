@@ -16,7 +16,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy:local": "gh-pages -d build",
-    "deploy": "gh-pages -d build -c ranjeet.ddns.net/ -r https://x-access-token:${GITHUB_TOKEN}@github.com/BarsaRanjeet/BarsaRanjeet.github.io.git",
+    "deploy": "gh-pages -d build -r https://x-access-token:${GITHUB_TOKEN}@github.com/BarsaRanjeet/BarsaRanjeet.github.io.git",
     "build": "vite build",
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
     "lint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
