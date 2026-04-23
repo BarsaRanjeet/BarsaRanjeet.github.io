@@ -232,7 +232,7 @@ const Json = () => {
                 <textarea
                   onChange={handleInputChange}
                   className="json-input"
-                  placeholder={`Paste your JSON here…\n\nExample:\n{\n  "name": "Ranjeet",\n  "skills": ["Node.js", "React"],\n  "active": true\n}`}
+                  placeholder={`Paste your JSON here…\n\nExample:\n{\n  "name": "Ranjeet",\n  "skills": ["Python", "Node.js", "React"],\n  "active": true\n}`}
                 />
               </div>
             </section>
@@ -262,7 +262,7 @@ const Json = () => {
                       <JsonView value={jsonInput} displayDataTypes={false} />
                     ) : (
                       <div aria-label="Formatted JSON">
-                        <pre className="codeblock">{`{\n  "name": "Ranjeet",\n  "skills": [\n    "Node.js",\n    "React"\n  ],\n  "active": true\n}`}</pre>
+                        <pre className="codeblock">{`{\n  "name": "Ranjeet",\n  "skills": [\n    "Python",\n    "Node.js",\n    "React"\n  ],\n  "active": true\n}`}</pre>
                       </div>
                     )}
                   </div>
