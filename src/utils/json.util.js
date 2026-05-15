@@ -3,6 +3,6 @@ export const validateJsonParse = (jsonValue) => {
     const value = JSON.parse(jsonValue);
     return { value, isValid: true };
   } catch (err) {
-    return { isValid: false, value: {}, error: err?.message };
+    return { isValid: false, error: err?.message };
   }
 };

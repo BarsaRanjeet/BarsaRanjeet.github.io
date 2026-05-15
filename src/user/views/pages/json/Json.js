@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import JsonView from "@uiw/react-json-view";
 import { useState } from "react";
 import { TriangleSolidArrow } from "@uiw/react-json-view/triangle-solid-arrow";
@@ -8,19 +8,37 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Json = () => {
   const [jsonInput, setJsonInput] = useState("");
+  const [jsonRawInput, setJsonRawInput] = useState("");
   const [valid, setValid] = useState(false);
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
-    const { value, isValid, error } = validateJsonParse(inputValue);
+    setJsonRawInput(inputValue);
+    const { value, isValid } = validateJsonParse(inputValue);
     if (isValid) {
       setValid(true);
       setJsonInput(value);
     } else {
       setValid(false);
-      toast.error(error);
     }
   };
+
+  useEffect(() => {
+    const checkValid = () => {
+      if (jsonRawInput) {
+        const { isValid, error } = validateJsonParse(jsonRawInput);
+        if (!isValid) {
+          toast.error(error);
+        }
+      }
+    };
+
+    const timeout = setTimeout(checkValid, 2000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [jsonRawInput]);
 
   return (
     <>
@@ -45,9 +63,15 @@ const Json = () => {
                   </svg>
                   Input JSON
                 </h2>
-                <span className={valid ? "panel-meta-green" : "panel-meta-red"}>
-                  Paste • Upload • Validate
-                </span>
+                {jsonRawInput ? (
+                  <span
+                    className={valid ? "panel-meta-green" : "panel-meta-red"}
+                  >
+                    Paste • Upload • Validate
+                  </span>
+                ) : (
+                  <span className="panel-meta">Paste • Upload • Validate</span>
+                )}
               </div>
               <div className="panel-body">
                 <textarea
