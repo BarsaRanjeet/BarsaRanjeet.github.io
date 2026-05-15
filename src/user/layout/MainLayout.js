@@ -13,7 +13,7 @@ const MainLayout = () => {
           <div className="hero-container">
             <div className="hero-content">
               <h1 className="hero-title">
-                Hi, I'm <span className="gradient-text">Ranjeet Barsa</span>
+                {"Hi, I'm"} <span className="gradient-text">Ranjeet Barsa</span>
               </h1>
               <p className="hero-subtitle">
                 Full-Stack JavaScript Developer with 5+ years of experience building scalable web applications, microservices, and serverless backends
@@ -136,7 +136,7 @@ const MainLayout = () => {
             <div className="section-header">
               <h2 className="section-title">Get in Touch</h2>
               <p className="section-subtitle">
-                Have a project in mind? Let's work together!
+                {"Have a project in mind? Let's work together!"}
               </p>
             </div>
             <div className="contact-content">
