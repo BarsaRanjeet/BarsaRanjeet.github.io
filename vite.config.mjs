@@ -31,12 +31,12 @@ export default defineConfig(() => {
     },
     plugins: [react()],
     resolve: {
-      alias: 
+      alias:
         // {
         //   find: "src/",
         //   replacement: `${path.resolve(__dirname, "src")}/`,
         // },
-        { "@assets": "/src/assets" },
+        { "@assets": "/src/assets", "@utils": "/src/utils" },
       // ],
       extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".scss"],
     },
