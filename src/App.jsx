@@ -11,6 +11,7 @@ const Login = React.lazy(() => import("./user/views/pages/login/Login"));
 const Tools = React.lazy(() => import("./user/views/pages/tools/Tools"));
 const Json = React.lazy(() => import("./user/views/pages/json/Json"));
 const MultiSingle = React.lazy(() => import("./user/views/pages/multi-single/MultiSingle"));
+const DiffChecker = React.lazy(() => import("./user/views/pages/diff-checker/DiffChecker"));
 const Register = React.lazy(
   () => import("./user/views/pages/register/Register")
 );
@@ -36,6 +37,7 @@ const App = () => {
           <Route exact path="/tools" name="Tools" element={<Tools />} />
           <Route exact path="/tools/json" name="JSON" element={<Json />} />
           <Route exact path="/tools/multi-single" name="multi-single" element={<MultiSingle />} />
+          <Route exact path="/tools/diff-checker" name="diff-checker" element={<DiffChecker />} />
           <Route
             exact
             path="/register"

@@ -4,6 +4,7 @@ import multiSingleIcon from "@assets/icons/multi-single.svg";
 import { Link } from "react-router-dom";
 import "@assets/scss/pages/_tools.scss";
 import rightDirectionIcon from "@assets/icons/right-direction.svg";
+import diffCheckerIcon from "@assets/icons/diff-checker.svg";
 
 const tools = [
   {
@@ -15,9 +16,17 @@ const tools = [
   },
   {
     id: "multi-single",
-  title: "Multi Line to Single Line",
-  description: "Convert multi-line text into a single line by removing line breaks and preserving spaces between lines.",
-  icon: <img src={multiSingleIcon} alt="Single Line Icon" />,
+    title: "Multi Line to Single Line",
+    description:
+      "Convert multi-line text into a single line by removing line breaks and preserving spaces between lines.",
+    icon: <img src={multiSingleIcon} alt="Single Line Icon" />,
+  },
+  {
+    id: "diff-checker",
+    title: "Diff Checker",
+    description:
+      "Compare two pieces of text side by side and instantly highlight added, removed, and modified lines.",
+    icon: <img src={diffCheckerIcon} alt="Diff Checker Icon" />,
   },
 ];
 
