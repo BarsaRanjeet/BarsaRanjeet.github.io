@@ -1,5 +1,6 @@
 import React from "react";
 import jsonIcon from "@assets/icons/json.svg";
+import multiSingleIcon from "@assets/icons/multi-single.svg";
 import { Link } from "react-router-dom";
 import "@assets/scss/pages/_tools.scss";
 import rightDirectionIcon from "@assets/icons/right-direction.svg";
@@ -11,6 +12,12 @@ const tools = [
     description:
       "Paste JSON, validate syntax, pretty-print with indentation, and explore the tree structure in a clear layout.",
     icon: <img src={jsonIcon} alt="JSON Icon" />,
+  },
+  {
+    id: "multi-single",
+  title: "Multi Line to Single Line",
+  description: "Convert multi-line text into a single line by removing line breaks and preserving spaces between lines.",
+  icon: <img src={multiSingleIcon} alt="Single Line Icon" />,
   },
 ];
 
