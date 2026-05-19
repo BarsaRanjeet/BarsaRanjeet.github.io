@@ -1,47 +1,26 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-// import path from "node:path";
 import autoprefixer from "autoprefixer";
 
-export default defineConfig(() => {
-  return {
-    base: "./",
-    build: {
-      outDir: "build",
+export default defineConfig({
+  base: "./",
+  build: {
+    outDir: "build",
+  },
+  css: {
+    postcss: {
+      plugins: [autoprefixer()],
     },
-    css: {
-      postcss: {
-        plugins: [
-          autoprefixer({}), // add options if needed
-        ],
-      },
+  },
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@assets": "/src/assets",
+      "@utils": "/src/utils",
     },
-    esbuild: {
-      loader: "jsx",
-      include: /src\/.*\.jsx?$/,
-      exclude: [],
-    },
-    optimizeDeps: {
-      force: true,
-      esbuildOptions: {
-        loader: {
-          ".js": "jsx",
-        },
-      },
-    },
-    plugins: [react()],
-    resolve: {
-      alias:
-        // {
-        //   find: "src/",
-        //   replacement: `${path.resolve(__dirname, "src")}/`,
-        // },
-        { "@assets": "/src/assets", "@utils": "/src/utils" },
-      // ],
-      extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".scss"],
-    },
-    server: {
-      port: 3000,
-    },
-  };
+    extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".scss"],
+  },
+  server: {
+    port: 3000,
+  },
 });

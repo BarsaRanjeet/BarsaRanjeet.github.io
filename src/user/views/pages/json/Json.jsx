@@ -40,6 +40,8 @@ const Json = () => {
     };
   }, [jsonRawInput]);
 
+  const customBeforeCopy = (text, value) => text.replace(/^"|"$/g, "");
+
   return (
     <>
       <div>
@@ -108,6 +110,7 @@ const Json = () => {
                         value={jsonInput}
                         displayDataTypes={false}
                         shortenTextAfterLength={false}
+                        beforeCopy={customBeforeCopy}
                       >
                         <JsonView.Arrow>
                           <TriangleSolidArrow />
