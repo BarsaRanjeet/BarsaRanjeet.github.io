@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "@assets/scss/pages/_multi-single.scss";
 import toast, { Toaster } from "react-hot-toast";
+import { getLocalStorage, setLocalStorage } from "@utils/localstorage.util.js";
+
+const MULTI_SINGLE = "multi-single";
 
 const MultiSingle = () => {
   const [inputText, setInputText] = useState("");
@@ -17,13 +20,19 @@ const MultiSingle = () => {
       .join(" ");
 
     setOutputText(converted);
+    setLocalStorage(MULTI_SINGLE, converted);
   };
 
   const handleCopy = async () => {
     if (!outputText) return;
     await navigator.clipboard.writeText(outputText);
-    toast.success("Copied!")
+    toast.success("Copied!");
   };
+
+  useEffect(() => {
+    const value = getLocalStorage(MULTI_SINGLE);
+    setOutputText(value);
+  }, []);
 
   return (
     <>
