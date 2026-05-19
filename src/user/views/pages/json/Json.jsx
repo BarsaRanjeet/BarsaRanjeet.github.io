@@ -4,7 +4,10 @@ import { useState } from "react";
 import { TriangleSolidArrow } from "@uiw/react-json-view/triangle-solid-arrow";
 import "@assets/scss/pages/_json.scss";
 import { validateJsonParse } from "@utils/json.util.js";
+import { getLocalStorage, setLocalStorage } from "@utils/localstorage.util.js";
 import toast, { Toaster } from "react-hot-toast";
+
+const JSON_VIEWER_FORMATTER = "json-viewer-formatter";
 
 const Json = () => {
   const [jsonInput, setJsonInput] = useState("");
@@ -18,10 +21,19 @@ const Json = () => {
     if (isValid) {
       setValid(true);
       setJsonInput(value);
+      setLocalStorage(JSON_VIEWER_FORMATTER, inputValue)
     } else {
       setValid(false);
     }
   };
+
+  useEffect(() => {
+    const localstorageData = getLocalStorage(JSON_VIEWER_FORMATTER);
+    const { value, isValid } = validateJsonParse(localstorageData);
+    if (isValid) {
+      setJsonInput(value);
+    }
+  }, []);
 
   useEffect(() => {
     const checkValid = () => {
