@@ -224,7 +224,7 @@ ${sampleModified}`}
                     oldValue={originalText}
                     newValue={modifiedText}
                     splitView={true}
-                    showDiffOnly={false}
+                    showDiffOnly={true}
                     useDarkTheme={false}
                   />
                 </div>
