@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import JsonView from "@uiw/react-json-view";
-import { useState } from "react";
 import { TriangleSolidArrow } from "@uiw/react-json-view/triangle-solid-arrow";
 import "@assets/scss/pages/_json.scss";
 import { validateJsonParse } from "@utils/json.util.js";
