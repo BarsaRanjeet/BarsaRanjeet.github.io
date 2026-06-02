@@ -51,7 +51,7 @@ const Json = () => {
     };
   }, [jsonRawInput]);
 
-  const customBeforeCopy = (text, value) => text.replace(/^"|"$/g, "");
+  const customBeforeCopy = (text) => text.replace(/^"|"$/g, "");
 
   return (
     <>
