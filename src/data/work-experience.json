@@ -1,0 +1,39 @@
+{
+    "experiences": [
+        {
+            "name": "Brainvire Infotech Inc.",
+            "role": "Software Engineer",
+            "startDate": "14/02/2022",
+            "endDate": null,
+            "responsibilities": [
+                "Full-Stack Engineer working across Python, Node.js, React.js, TypeScript, AWS, GCP, Firebase, and Adobe App Builder.",
+                "Led AIChatApp.ai (via Leadtech): built scalable real-time chat architecture for 10K+ users, integrated ChatGPT/Claude/Gemini, implemented secure role-based access, and improved delivery using Cloud Build CI/CD.",
+                "Contributed to Thomson Reuters platforms (LEON, GFX, LINSI): developed and optimized microservices on AWS (Lambda/ECS/OpenSearch), improved API performance, reliability, security, and test coverage.",
+                "Performed R&D on Adobe App Builder and delivered training/support to Adobe team members for implementation best practices.",
+                "Delivered Adobe Commerce + Adobe App Builder integration: GraphQL store config, Fetch by SKU (sync/async), Plytix token with expiry handling, attribute/options mapping, custom select/multiselect mapping, child product linking, enable/disable + website assignment logic, image base64 processing, old image cleanup, and Bulk API payload integration.",
+                "Completed operational tasks: New Relic log forwarding, GitHub environment variable setup, staging integration setup, and consumer queue issue investigation/fixes."
+            ]
+        },
+        {
+            "name": "Atcults",
+            "role": "Software Developer",
+            "startDate": "07/09/2020",
+            "endDate": "05/02/2022",
+            "responsibilities": [
+                "Built real-time backend systems using Node.js, Socket.IO, Redis, and Python automation scripts. Developed proxy and event-driven services for high-throughput sports betting workflows. Performed load testing and production tuning to improve throughput and data accuracy. Supported frontend-consumable APIs and real-time data delivery pipelines.",
+                "Developed REST APIs and core backend modules using Node.js/TypeScript, with supporting automation in Python. Managed PostgreSQL operations, release pipelines, and deployment workflows. Worked closely with product and frontend teams to deliver user-facing features and integration flows. Improved maintainability and delivery consistency through CI/CD and environment standardization."
+            ]
+        },
+        {
+            "name": "Infosenseglobal Inc.",
+            "role": "Junior Software Developer",
+            "startDate": "16/12/2019",
+            "endDate": "30/05/2020",
+            "responsibilities": [
+                "Built strong software fundamentals in Oracle SQL, PL/SQL, and Oracle Applications.",
+                "Contributed to backend modules, database operations, and debugging tasks in enterprise workflows.",
+                "Developed core skills in data modeling, query optimization, and production-grade SQL development."
+            ]
+        }
+    ]
+}

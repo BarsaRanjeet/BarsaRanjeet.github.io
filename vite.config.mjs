@@ -17,6 +17,8 @@ export default defineConfig({
     alias: {
       "@assets": "/src/assets",
       "@utils": "/src/utils",
+      "@helpers": "/src/helpers",
+      "@data": "/src/data"
     },
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".scss"],
   },

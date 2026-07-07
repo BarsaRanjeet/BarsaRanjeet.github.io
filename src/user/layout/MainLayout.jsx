@@ -2,8 +2,15 @@ import React from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import "@assets/scss/layout/_mainLayout.scss";
+import { experiences } from "@data/work-experience.json"
+import { parseExpYears } from "@utils/experience.util";
+import { calculateExperience } from "@helpers/experience.helper"
 
 const MainLayout = () => {
+
+  const yearsOfExp = parseExpYears(experiences);
+  const { years, months, days, formatted } = calculateExperience(yearsOfExp);
+
   return (
     <div className="main-layout">
       <Header />
@@ -16,7 +23,7 @@ const MainLayout = () => {
                 {"Hi, I'm"} <span className="gradient-text">Ranjeet Barsa</span>
               </h1>
               <p className="hero-subtitle">
-                Full-Stack JavaScript Developer with 5+ years of experience building scalable web applications, microservices, and serverless backends
+                Full-Stack Engineer with {years}.{months} years of experience building scalable web applications, microservices, and serverless backends
               </p>
               <div className="hero-actions">
                 <a href="#features" className="btn btn-primary btn-large">
@@ -150,7 +157,7 @@ const MainLayout = () => {
                   </div>
                   <div>
                     <h4>Email</h4>
-                    <p><a href="mailto:barsaranjeet12@gmail.com" style={{color: 'inherit', textDecoration: 'none'}}>barsaranjeet12@gmail.com</a></p>
+                    <p><a href="mailto:barsaranjeet12@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>barsaranjeet12@gmail.com</a></p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -161,7 +168,7 @@ const MainLayout = () => {
                   </div>
                   <div>
                     <h4>Phone</h4>
-                    <p><a href="tel:+916353859016" style={{color: 'inherit', textDecoration: 'none'}}>+91 6353859016</a></p>
+                    <p><a href="tel:+916353859016" style={{ color: 'inherit', textDecoration: 'none' }}>+91 6353859016</a></p>
                   </div>
                 </div>
                 <div className="contact-item">
